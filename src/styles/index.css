@@ -1,0 +1,121 @@
+/* Global */
+:root {
+  --primary-color: #3B82F6;
+}
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+body * {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+input, textarea {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #1e1e1e;
+  border-radius: 3px;
+  padding: 10px 15px;
+  max-width: 100%;
+}
+textarea {
+  min-height: 150px;
+}
+button {
+  padding: 8px 15px;
+  border: 0;
+  font-weight: bold;
+  border-radius: 3px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #1e1e1e;
+  font-size: 15px;
+}
+
+/* Utils */
+.container {
+  width: 100%;
+  padding: 0 1%; 
+}
+
+/* Layouts */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  border-bottom: 1px solid #1d1d1d;
+  margin-bottom: 60px;
+}
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Components */
+.btn-danger {
+  color: #F87171;
+}
+.blogs-list, .blog-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.blog-post {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-title, .blog-title a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.blog-content {
+  line-height: 28px;
+}
+.blog-details .blog-content {
+  line-height: 38px;
+}
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #1e1e1e;
+  padding-top: 10px;
+}
+.blog-footer .readmore {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+.blog-create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.blog-create form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+}
+@media only screen and (max-width: 992px) {
+  .blog-post {
+    width: 95%;
+  }
+}
